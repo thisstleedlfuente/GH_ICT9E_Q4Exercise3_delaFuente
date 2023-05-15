@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Centimeters to Feet
+    </title>
+</head>
+<body>
+    <input type="text" id="cm" placeholder="Input value in centimeters!"><br>
+    <input type="submit" value="Convert!" onclick="cv()"><br><br>
+    <div>Convert Value to Feet (ft):<p id="v"></p></div>
+    <script>
+        function cv(){
+            var n = document.getElementById('cm').value;
+            var con = 0.0328084
+            var ft = Number(n) * Number(con)
+            document.getElementById('v').innerHTML = ft
+        }
+    </script>
+</body>
+</html>
